@@ -51,7 +51,7 @@ body {
     position: relative;
     width: 90%;
     max-width: 900px;
-    height: auto;
+    
     max-height:600px;
     aspect-ratio: 3 / 2;  /* Maintains aspect ratio */
     margin: 30px auto;
