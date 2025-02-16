@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate Generator</title>
+    <link rel="stylesheet" href="CSS/certificate.css">
+</head>
+<body>
+    <div class="input-form">
+        <h2>Generate Your Certificate</h2>
+        <input type="text" id="name" placeholder="Enter Your Name">
+        <input type="text" id="course" placeholder="Enter Course Name">
+        <button id="btnxx">Generate Certificate</button>
+    </div>
+
+    <div id="certificate-section" class="hidden">
+        <div class="certificate">
+            <img src="IMAGES/A.png" class="bg-image" alt="Certificate Background">
+            <div class="content">
+                <h2>Certificate of Achievement</h2>
+                <p>This is to certify that</p>
+                <h1 id="recipient-name">[Recipient Name]</h1>
+                <p>has successfully completed the course</p>
+                <h3 id="course-name">[Course Name]</h3>
+                <p>on</p>
+                <h4 id="date"></h4>
+                <div class="signatures">
+                    <div class="signature">
+                        <p>Instructor</p>
+                    </div>
+                    <div class="signature">
+                        <p>CEO</p>
+                      
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
+        <button onclick="downloadCertificate()">Download as PDF</button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="js/certificate.js"></script>
+   
+</body>
+</html>
